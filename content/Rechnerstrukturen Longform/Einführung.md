@@ -7,6 +7,7 @@ tags:
 **Rechnerstrukturen** (архитектура ЭВМ) — это наука о том, как спроектировать компьютер так, чтобы он эффективно выполнял софт.
 
 #### Mikroarchitektur eines CPU-Kerns
+
 Die **Mikroarchitektur** gliedert sich in drei Teilsysteme:
 
 - **Front-End**: Zuständig für Befehlsholung (Instruction Fetch) und Befehlsdekodierung.
