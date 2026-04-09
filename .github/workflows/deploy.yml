@@ -5,6 +5,9 @@ on:
     branches:
       - v4
  
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Эта строка уберет предупреждение
+
 permissions:
   contents: read
   pages: write
