@@ -5,7 +5,7 @@ longform:
   workflow: Default Workflow
   sceneFolder: /
   scenes:
-    - Main
+    - Kap.1
     - 3.3 Anforderungen
     - 3.5. Steigern der Perfomanz (Power Wall)
   sceneTemplate: templates/template settings.md
