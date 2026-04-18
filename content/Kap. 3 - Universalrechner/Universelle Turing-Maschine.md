@@ -1,0 +1,6 @@
+
+Universalrechner haben die Entwicklung der Computertechnologie entscheidend geprägt. Sie können verschiedenste Aufgaben bewältigen, indem sie Software ausführen und haben dadurch unseren Umgang mit Informationen, Kommunikation und Steuerung grundlegend verändert. In diesem Kapitel werfen wir einen Blick auf die Grundlagen dieser programmierbaren Rechner und beschäftigen uns unter anderem mit der von-Neumann-Architektur, der Harvard-Architektur und einer beispielhaften Mikroarchitektur. Um moderne Rechnerarchitekturen besser zu verstehen und vergleichen zu können, ist es wichtig, sie zu klassifizieren. Der zweite Teil des Kapitels zeigt, wie man diese Architekturen sinnvoll einteilen kann.
+
+Ein Universalrechner bzw. eine universelle Turing-Maschine, ist ein theoretisches Modell eines Computers, das die Fähigkeit besitzt, jeden Algorithmus auszuführen, der auch von einer Turing-Maschine ausgeführt werden kann. Die Arbeiten von Kurt Gödel zur Existenz nicht entscheidbarer Probleme (1931) und die von Alan Turing entwickelten Ideen zum Berechenbarkeitsbegriff (1938) haben maßgeblich zur Entwicklung dieses Modells beigetragen.
+
+![[Pasted image 20260418235831.png]]
