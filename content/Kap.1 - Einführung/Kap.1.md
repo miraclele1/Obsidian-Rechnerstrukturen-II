@@ -30,6 +30,7 @@ ISA (Instruction Set Architecture) — это архитектура набор
 > Die **ISA** bleibt oft über Generationen gleich (z. B. x86 oder RISC-V), damit Software weiterhin läuft. Die **Mikroarchitektur** kann sich massiv verändern (mehr Pipelines oder größere L3-Caches hinzufügen), um die Performanz zu steigern, ohne dass der Programmierer seinen Code ändern muss. Sie bleibt gleich, um **Abwärtskompatibilität** über viele Rechnergenerationen hinweg zu garantieren: Einmal geschriebene Software soll ohne Neukompilierung auf immer leistungsfähigerer Hardware laufen. Während die interne Mikroarchitektur (das „Wie“) ständig optimiert wird, bleibt die ISA (das „Was“) als stabiler Standard bestehen
 
 
+### RISC & CISC
 **RISC** и **CISC** — это две разные философии проектирования этого интерфейса.
 
 |                | RISC                                                        | CISC                                                                                 |
@@ -38,12 +39,17 @@ ISA (Instruction Set Architecture) — это архитектура набор
 | Работа         | фикс. длина команд, <br>предсказуемое время                 | варьируется                                                                          |
 | Speichermodell | работа только через<br>регистры Load/Store                  | команды напрямую<br>с процом                                                         |
 | Цель           | Минимизировать кол-во тактов<br>Cycles Per Instruction, CPI | Минимизировать кол-во <br>инструкций в программе <br>(**Instruction Count**, **IC**) |
-|                |                                                             |                                                                                      |
+### Пояснения
 > [!info]- Нажми, чтобы развернуть
-> **Регистр** — это сверхбыстрая  <u>ячейка памяти</u> внутри проца для врем. хранения команд, адресов в текущий момент. Быстрее RAM
+> **Регистр** — это сверхбыстрая  <u>ячейка памяти</u> внутри проца для врем. хранения команд, адресов в текущий момент. Быстрее чем ходить постоянно в RAM. Он сначала все выполняет в регистры потом отправляет их в RAM.
+> 
 > **Taktzyklus** [[3.0 Leistungsmetriken#Taktfrequenz|more]] - это единица времени работы проца. За такт выполняется один Maschienenbefehl или этап в Pipeline. Оно не фиксированное - зависит от тактовой частоты GHz. Его длительность - Zyklyszeit.
+> CLK = Clock (метроном)
+> 
 > **Цикл команды**(Befehlzyklus) - это процесс выполнения одной инструкции, там много стадий.
+> 
 > **Инструкция** - это команда из набора команд процессора (Befehlssatz), которая приказывает выполнить конкретное действие - напр.  арифметическую операцию (ADD)
+> 
 > **CPI**(Cycles Per Instuction) - среднее кол-во тактов процессора для одной инструкции. Если стадий  5 -> CPI = 5
 > $$T_{CLK} = \frac{1}{f_{CLK}}$$
 > $$t_{ex} = IC \cdot CPI \cdot T_{CLK}$$
