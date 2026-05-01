@@ -13,7 +13,7 @@ WB - Write Back
 ### Mehrfachzyklus vs Pipelining
 [[Kap.1#Пояснения|CLK]] - Clock - меняется с 0 на 1.
 
-Singe Cycle - всегда одинаковое время такта. Это время выполнения самой длинной [[Kap.5 - Pipelining#Befehlsformat (Типы инструкций)|инструкции]](здесь =5).
+Singe Cycle - всегда одинаковое время такта. Это время выполнения самой длинной [[Kap.6 - Pipelining#Befehlsformat (Типы инструкций)|инструкции]](здесь =5).
 Mehrfachzyklyus - 
 ![[Pasted image 20260426210451.png]]
 
