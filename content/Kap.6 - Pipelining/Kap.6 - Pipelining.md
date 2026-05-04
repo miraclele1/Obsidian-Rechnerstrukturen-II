@@ -35,3 +35,21 @@ P.S. - пропуски только в Multi Cycle. Экономит время
 
 
 
+### 4. Pipelineeffizienz
+насколько реально ускоряется процессор при использовании конвейерной обработки по сравнению с идеальным случаем.
+#### Идеальный случай
+В идеале, если разделить выполнение команды на k этапов (например, 5 этапов в MIPS), то пропускная способность (**Durchsatz**) должна вырасти в k раз. В примере с «бытовой проблемой» (стиркой) это работает идеально только в том случае, если каждый шаг (стирка, сушка, глажка) длится ровно один и тот же отрезок времени (например, 1 час)
+
+
+Implementiert man eine Pipelinearchitektur für eine **homogene Rechenzeit** pro Arbeitsschrit, lassen sich Speedup und Effizienz wie folgt berechnen:
+![[Pasted image 20260504230613.png]]
+
+In der Regel benötigen nicht alle Arbeitsschritte die selbe Zeit. Speicherzugriffe dauern länger als ALU Operationen, die wiederum länger dauern als einfache Registerzugriffe.
+In einer Pipeline wird also die Rechenzeit für alle Phasen an die Rechenzeit der längsten Phase angeglichen. Die zusätzlich benötigte Zeit pro Pipelinezyklus nennt man Pipelineverschnitt.
+
+Пример: 
+
+Wir nehmen an, dass sich folgende Verzögerungszeiten im Datenpfad ergeben:
+
+- 100 ps für alle Registerzugriffe
+- 200 ps für alle anderen Pipelinestufen
