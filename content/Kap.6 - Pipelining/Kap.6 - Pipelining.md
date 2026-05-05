@@ -53,3 +53,5 @@ Wir nehmen an, dass sich folgende Verzögerungszeiten im Datenpfad ergeben:
 
 - 100 ps für alle Registerzugriffe
 - 200 ps für alle anderen Pipelinestufen
+
+
