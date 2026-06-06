@@ -21,4 +21,4 @@
 - [[3.6.  Workloads]]
 - [[3.7 CISC, RISC, Leistungsmodell]]
 - [[4.1, 4.2, 4.3 Speedup, Effizienz, Amdahls Gesetz]]
-- [[Übung3_A2]]
+- [[Rechnerstrukturen II/Kap.2 - Leistungsbewertung/Übung3_A2]]
