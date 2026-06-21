@@ -1,3 +1,60 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+/* ==========================================================================
+   ОПТИМИЗАЦИЯ ПОД МОНОХРОМНЫЙ E-INK ЭКРАН (KOBO CLARA HD)
+   ========================================================================== */
+
+// 1. ЖИРНЫЙ ТЕКСТ: Делаем инверсным (белый текст на темной плашке) или подчеркнутым.
+// Выбери ОДИН из двух вариантов ниже:
+
+// Вариант А: Инверсный маркер (очень заметно, как в учебниках)
+strong, b {
+    font-weight: 800;
+    background-color: #333333; /* Темно-серый фон */
+    color: #ffffff !important;  /* Белый текст */
+    padding: 0px 4px;
+    border-radius: 3px;
+}
+
+// Вариант Б: Если не хочешь темные плашки, удали код выше и раскомментируй этот:
+// strong, b { font-weight: 800; border-bottom: 2px dashed #000000; padding-bottom: 1px; }
+
+
+// 2. КУРСИВНЫЙ ТЕКСТ: На читалках наклон часто незаметен. Выделяем его точечной линией снизу.
+em, i {
+    font-style: italic;
+    border-bottom: 1px dotted #444444;
+    padding-bottom: 1px;
+}
+
+
+// 3. ЗАГОЛОВКИ: Добавляем им четкие разделительные линии и левый маркер
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900 !important;
+    color: #000000 !important;
+    margin-top: 1.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+// Главные заголовки подчеркиваем сплошной жирной линией
+h1, h2 {
+    border-bottom: 2px solid #000000 !important;
+    padding-bottom: 4px;
+}
+
+// Мелкие заголовки (H3, H6), которые ты используешь, выделяем вертикальной чертой слева
+h3, h6 {
+    border-left: 4px solid #333333 !important;
+    padding-left: 8px;
+}
+
+
+// 4. КОЛЛАУТЫ И СПОЙЛЕРЫ (Твои Сценарии 1 и 2)
+// Делаем им жирную рамку, чтобы они не сливались с текстом H3
+.callout, details {
+    border: 2px solid #000000 !important;
+    background: #ffffff !important;
+    padding: 10px !important;
+    margin: 12px 0 !important;
+}
